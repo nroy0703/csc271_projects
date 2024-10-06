@@ -1,0 +1,78 @@
+body{
+    background-color: darkolivegreen;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    color: antiquewhite;
+    text-align: center;
+}
+p{
+    font-size: 18px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    color: lightcoral;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+.video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+h2{
+    font-size: 30px;
+    color: antiquewhite;
+    text-align: center;
+}
+.image{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.my-info{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#logo{
+    width: 150px; 
+    height: auto;
+}
+.index-list{
+    justify-content: center;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    text-align: center;
+}
+.list-items{
+    color: white
+}
+a {
+    color: blue;
+}
+a:hover {
+    color: red;
+}
+a:visited {
+    color: pink;
+}
