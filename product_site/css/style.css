@@ -19,7 +19,7 @@ h1{
 .header-right{
     float: right;
     color: green;
-    font: Arial; 
+    font-family: Arial; 
     font-size: 18px;
     text-decoration: none;
     padding-left: 12px;
@@ -29,11 +29,11 @@ h1{
     margin-top: 12px;
 }
 .left-col{
-    float: center;
+    float: left;
     width: 100%;
 }
 .right-col{
-    float: center;
+    float: right;
     width: 100%;
     background-color: gray;
     padding: 20px;
@@ -72,7 +72,7 @@ h2{
 }
 .image{
     display: block;
-    float: center;
+    float: left;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -99,13 +99,13 @@ h2{
     background-color: grey;
     padding: 20px;
     width: 100%;
-    float: center;
+    float: left;
 }
 .form-div{
     background-color: maroon;
     padding: 20px;
     width: 100%;
-    float: center;
+    float: left;
 }
 .form{
     text-align: center;
