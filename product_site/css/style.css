@@ -12,21 +12,41 @@ h1{
     text-align: center;
 }
 .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     overflow: hidden;
     background-color: black;
-    padding: 5px;
+    padding: 20px 80px;
 }
 .header-right{
-    float: right;
-    color: green;
-    font-family: Arial; 
-    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-right li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+.header-right li a{
     text-decoration: none;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-top: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.header-right li a:hover, .header-right li a:active {
+    color: yellow;
+}
+.header-right li a.active::after, .header-right li a:hover::after{
+    content: '';
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: yellow;
+    position: absolute;
+    left: 20px;
+
 }
 .left-col{
     float: left;
@@ -80,11 +100,6 @@ h2{
     max-width: 100%;
     height: auto;
 }
-.my-info{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 #logo{
     width: 150px; 
     height: auto;
@@ -101,8 +116,14 @@ h2{
     width: 100%;
     float: left;
 }
+.my-info{
+    text-align: left;
+}
+#contact{
+    color: white;
+}
 .form-div{
-    background-color: maroon;
+    background-color: rgb(45, 128, 0);
     padding: 20px;
     width: 100%;
     float: left;
@@ -116,7 +137,7 @@ h2{
 a {
     color: blue;
 }
-a:hover {
+a:hover, a:active {
     color: red;
 }
 a:visited {
