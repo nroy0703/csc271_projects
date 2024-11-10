@@ -17,13 +17,20 @@ star_rating[0].innerHTML = "Most popular device<br>5 " + stars;
 //Variable for grabbing the element and class name for the most popular laptop using querySelectorAll
 var most_popular = document.querySelectorAll(".most-popular");
 
-//While loop iterating through the most popular laptop text and stars and changing the color to yellow
-//I chose the while loop because the length the the most popular laptop is unknown, so while loop makes sense here
-var i = 0;
-while (i < most_popular.length) {
-    most_popular[i].style.color = "yellow";
-    i++;
+// Basic function with no parameters that returns nothing, to change the text color of the most popular laptop
+function most_popular_color() {
+    //While loop iterating through the most popular laptop text and stars and changing the color to yellow
+    //I chose the while loop because the length the the most popular laptop is unknown, so while loop makes sense here
+    var i = 0;
+    while (i < most_popular.length) {
+        most_popular[i].style.color = "yellow";
+        i++;
+    }
 }
+
+//Call the function most_popular_color
+most_popular_color();
+
 
 //Decisions
 
@@ -48,3 +55,4 @@ for (var i = 0; i < price.length; i++) {
         price[i].style.color = "lightgreen";
     }
 }
+
