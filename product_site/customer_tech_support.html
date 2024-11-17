@@ -74,8 +74,9 @@
                 <td>Differs based on carrier</td>
             </tr>
         </table>
+        <br>
 
-        <p id="low-stock-notice"></p>
+        <button id="low-stock-notice"><strong>Important Notice! Click here</strong></button>
 
         <br>
         </div>
@@ -84,30 +85,35 @@
 
         <h2>Help us help you!</h2>
 
-        <form class="form" action="index.html" method="post">
+        <form class="form" action="customer_tech_support.html" method="post">
             <p>What type of device are you looking for?</p>
-            <input type="radio" name="device" value="Smartphone"/>Smartphone
-            <input type="radio" name="device" value="Desktop" />Desktop
-            <input type="radio" name="device" value="Laptop" />Laptop
-            <input type="radio" name="difficulty" value="Tablet" />Tablet<br><br>
+            <input class="device" type="radio" name="device" value="Smartphone"/>Smartphone
+            <input class="device" type="radio" name="device" value="Desktop" />Desktop
+            <input class="device" type="radio" name="device" value="Laptop" />Laptop
+            <input class="device" type="radio" name="difficulty" value="Tablet" />Tablet<br><br>
+
+            <p id="device-feedback"></p>
 
             <p>What is your price range?</p>
-            <input type="radio" name="price" value="300-500"/>$300-$500
-            <input type="radio" name="price" value="500-700" />$500-$700
-            <input type="radio" name="price" value="700-900" />$700-$900
-            <input type="radio" name="price" value=">1000" />>$1000<br><br>
+            <input class="range" type="radio" name="price" value="300-500"/>$300-$500
+            <input class="range" type="radio" name="price" value="500-700" />$500-$700
+            <input class="range" type="radio" name="price" value="700-900" />$700-$900
+            <input class="range" type="radio" name="price" value=">1000" />>$1000<br><br>
 
             <p>What will you be using this device for?</p>
-            <input type="checkbox" name="purpose" value="Work"/>Work
-            <input type="checkbox" name="purpose" value="School" />School
-            <input type="checkbox" name="purpose" value="Home Office" />Home Office
-            <input type="checkbox" name="purpose" value="Traveling" />Traveling
-            <input type="checkbox" name="purpose" value="Other" />Other<br><br>
+            <input class="use-case" type="checkbox" name="purpose" value="Work"/>Work
+            <input class="use-case" type="checkbox" name="purpose" value="School" />School
+            <input class="use-case" type="checkbox" name="purpose" value="Home Office" />Home Office
+            <input class="use-case" type="checkbox" name="purpose" value="Traveling" />Traveling
+            <input class="use-case" type="checkbox" name="purpose" value="Other" />Other<br><br>
 
             <p>Anything else you would like to share with us? (optional)</p>
             <textarea name="difficulty" rows="4" cols="50"></textarea><br><br>
 
-            <input type="submit" value="Submit">
+            <input id="submit" type="submit" value="Submit">
+
+            <p id="message"></p>
+            <p id="form-success"></p>
 
             <br><br>
         </form>
