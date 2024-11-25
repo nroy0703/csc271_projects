@@ -102,3 +102,110 @@ getForm.addEventListener('submit', function(event) {
     }
 });
 
+//Objects (Constructor Notation)
+
+//Object that stores the device, brands, and price range of devices (laptops, desktops, tablets)
+function Device(device, brands, startPrice, endPrice){
+    this.device = device;
+    this.brands = brands;
+    this.startPrice = startPrice;
+    this.endPrice = endPrice;
+    //Method that displays the discount of the device
+    this.displayDiscount = function(){
+        return "Get 10% off on all " + this.device + "!";
+    };
+}
+
+//Object that stores the device, brands, and price range of smartphones
+function Smartphone(device, brands, priceRange){
+    this.device = device;
+    this.brands = brands;
+    this.priceRange = priceRange;
+}
+
+//Create a new object for laptops
+var laptops = new Device("Laptops", "Gigabyte", 300, 700);
+//Create a new object for desktops
+var desktops = new Device("Desktops", "Alienware, Acer, Dell, Apple", 400, 3000);
+//Create a new object for tablets
+var tablets = new Device("Tablets", "Android, Amazon, Apple, Google", 200, 400);
+//Create a new object for smartphones
+var smartphones = new Smartphone("Smartphones", "Apple, Samsung", "Differs based on carrier");
+
+//Get the id in my customer_tech_support.html file and store it in variable laptopName
+var laptopName = document.querySelector('#laptop-name');
+
+//Set the text content of the laptopName to the laptops device
+laptopName.textContent = laptops.device;
+
+//Get the id in my customer_tech_support.html file and store it in variable laptopBrands
+var laptopBrands = document.querySelector('#laptop-brands');
+
+//Set the text content of the laptopBrands to the laptops brands
+laptopBrands.innerHTML += ", " + laptops.brands;
+
+//Get the id in my customer_tech_support.html file and store it in variable laptopPrice
+var laptopPrice = document.querySelector('#laptop-price');
+
+//Set the text content of the laptopPrice to the laptops price range
+laptopPrice.innerHTML += "$" + laptops.startPrice + " - " + "$" + laptops.endPrice;
+
+//Get the id in my customer_tech_support.html file and store it in variable desktopName
+var desktopName = document.querySelector('#desktop-name');
+
+//Set the text content of the desktopName to the desktops device
+desktopName.textContent = desktops.device;
+
+//Get the id in my customer_tech_support.html file and store it in variable desktopBrands
+var desktopBrands = document.querySelector('#desktop-brands');
+
+//Set the text content of the desktopBrands to the desktops brands
+desktopBrands.textContent = desktops.brands;
+
+//Get the id in my customer_tech_support.html file and store it in variable desktopPrice
+var desktopPrice = document.querySelector('#desktop-price');
+
+//Set the text content of the desktopPrice to the desktops price range
+desktopPrice.innerHTML += "$" + desktops.startPrice + " - " + desktops.endPrice;
+
+//Get the id in my customer_tech_support.html file and store it in variable tabletName
+var tabletName = document.querySelector('#tablet-name');
+
+//Set the text content of the tabletName to the tablets device
+tabletName.textContent = tablets.device;
+
+//Get the id in my customer_tech_support.html file and store it in variable tabletBrands
+var tabletBrands = document.querySelector('#tablet-brands');
+
+//Set the text content of the tabletBrands to the tablets brands
+tabletBrands.textContent = tablets.brands;
+
+//Get the class in my customer_tech_support.html file and store it in variable tabletPrice
+var tabletPrice = document.querySelector('.smartphone-price');
+
+//Set the text content of the tabletPrice to the tablets price range
+tabletPrice.innerHTML = "$" + tablets.startPrice + " - " + "$" + tablets.endPrice;
+
+//Get the id in my customer_tech_support.html file and store it in variable smartphoneName
+var smartphoneName = document.querySelector('#smartphone-name');
+
+//Set the text content of the smartphoneName to the smartphones device
+smartphoneName.textContent = smartphones.device;
+
+//Get the id in my customer_tech_support.html file and store it in variable smartphoneBrand
+var smartphoneBrand = document.querySelector('#smartphone-brand');
+
+//Set the text content of the smartphoneBrand to the smartphones brands
+smartphoneBrand.textContent = smartphones.brands;
+
+//Get the id in my customer_tech_support.html file and store it in variable smartphonePrices
+var smartphonePrices = document.querySelector('#smartphone-prices');
+
+//Set the text content of the smartphonePrices to the smartphones price range
+smartphonePrices.textContent = smartphones.priceRange;
+
+//Get the id in my customer_tech_support.html file and store it in variable discount
+var discount = document.querySelector('#discount');
+
+//Set the text content of the discount to the laptops displayDiscount method
+discount.innerHTML = "<strong>" + laptops.displayDiscount() + "</strong>";

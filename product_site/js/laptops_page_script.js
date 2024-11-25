@@ -55,4 +55,3 @@ for (var i = 0; i < price.length; i++) {
         price[i].style.color = "lightgreen";
     }
 }
-
