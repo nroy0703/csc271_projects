@@ -18,6 +18,7 @@ h1{
     overflow: hidden;
     background-color: black;
     padding: 20px 80px;
+    width: 100%;
 }
 .header-right{
     display: flex;
@@ -43,7 +44,7 @@ h1{
     display: block;
     width: 70%;
     height: 2px;
-    background: yellow;
+    background: yellow;;
     position: absolute;
     left: 20px;
 
@@ -159,7 +160,7 @@ a:visited {
       text-align: left;
     }
     .header-right{
-      float: none;
+        float: none;
     }
     .left-col{
       width: 100%;

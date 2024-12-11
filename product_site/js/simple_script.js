@@ -75,6 +75,16 @@ document.getElementById('low-stock-notice').addEventListener('click', function()
 
 //Get the form class in my customer_tech_support.html file and store it in variable getForm
 var getForm = document.querySelector('.form');
+var optionalInput = document.querySelector('.text-area');
+optionalInput.addEventListener('focus', function() {
+    getMessage = document.querySelector('#optional');
+    getMessage.textContent = 'Feel free to enter any additional information in the above text area.(Optional)';
+    getMessage.style.color = 'black';
+});
+optionalInput.addEventListener('blur', function() {
+    getMessage = document.querySelector('#optional');
+    getMessage.textContent = '';
+});
 //Add an event listener to the form to call the function when the form is submitted
 getForm.addEventListener('submit', function(event) {
     //Get the device input class in customer_tech_support.html and store it in a variable
