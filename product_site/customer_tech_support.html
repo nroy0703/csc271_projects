@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta lang="en">
         <meta name="description" content="This page covers customer tech support and helping user find the best device for them">
         <meta name="keywords" content="customer tech support">
         <title>Customer Technology Support</title>
@@ -89,25 +90,38 @@
 
         <form class="form" action="customer_tech_support.html" method="post">
             <p>What type of device are you looking for?</p>
-            <input class="device" type="radio" name="device" value="Smartphone"/>Smartphone
-            <input class="device" type="radio" name="device" value="Desktop" />Desktop
-            <input class="device" type="radio" name="device" value="Laptop" />Laptop
-            <input class="device" type="radio" name="difficulty" value="Tablet" />Tablet<br><br>
+            <input class="device" type="radio" name="device" value="Smartphone"/>
+            <label for="smartphone">Smartphone</label>
+            <input class="device" type="radio" name="device" value="Desktop" />
+            <label for="desktop">Desktop</label>
+            <input class="device" type="radio" name="device" value="Laptop" />
+            <label for="laptop">Laptop</label>
+            <input class="device" type="radio" name="difficulty" value="Tablet" />
+            <label for="tablet">Tablet</label><br><br>
 
             <p id="device-feedback"></p>
 
             <p>What is your price range?</p>
-            <input class="range" type="radio" name="price" value="300-500"/>$300-$500
-            <input class="range" type="radio" name="price" value="500-700" />$500-$700
-            <input class="range" type="radio" name="price" value="700-900" />$700-$900
-            <input class="range" type="radio" name="price" value=">1000" />>$1000<br><br>
+            <input class="range" type="radio" name="price" value="300-500"/>
+            <label for="$300-$500">$300-$500</label>
+            <input class="range" type="radio" name="price" value="500-700" />
+            <label for="$500-$700">$500-$700</label>
+            <input class="range" type="radio" name="price" value="700-900" />
+            <label for="$700-$900">$700-$900</label>
+            <input class="range" type="radio" name="price" value=">1000" />
+            <label for=">$1000">>$1000</label><br><br>
 
             <p>What will you be using this device for?</p>
-            <input class="use-case" type="checkbox" name="purpose" value="Work"/>Work
-            <input class="use-case" type="checkbox" name="purpose" value="School" />School
-            <input class="use-case" type="checkbox" name="purpose" value="Home Office" />Home Office
-            <input class="use-case" type="checkbox" name="purpose" value="Traveling" />Traveling
-            <input class="use-case" type="checkbox" name="purpose" value="Other" />Other<br><br>
+            <input class="use-case" type="checkbox" name="purpose" value="Work"/>
+            <label for="Work">Work</label>
+            <input class="use-case" type="checkbox" name="purpose" value="School" />
+            <label for="School">School</label>
+            <input class="use-case" type="checkbox" name="purpose" value="Home Office" />
+            <label for="Home Office">Home Office</label>
+            <input class="use-case" type="checkbox" name="purpose" value="Traveling" />
+            <label for="Traveling">Traveling</label>
+            <input class="use-case" type="checkbox" name="purpose" value="Other" />
+            <label for="Other">Other</label><br><br>
 
             <p>Anything else you would like to share with us? (optional)</p>
             <textarea class="text-area" name="difficulty" rows="4" cols="50"></textarea><br><br>

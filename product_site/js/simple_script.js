@@ -35,7 +35,7 @@ full_page_description[0].innerHTML += "<em>" + added_page_description + "</em>";
 var form_style = document.querySelector(".form-div");
 
 //Use querySelector variable to change the background color and text color of the content in the form-div
-form_style.style.backgroundColor = "darkgreen";
+form_style.style.backgroundColor = "apricot";
 form_style.style.color = "white";
 
 //Using arithmetic operators to calculate the stock quantity of a certain device
